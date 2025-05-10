@@ -246,6 +246,7 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+<<<<<<< HEAD
   flutter_facebook_auth:
     dependency: "direct main"
     description:
@@ -270,6 +271,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.0.1"
+=======
+>>>>>>> 78c655e41a363fac3a8a2822f188a32a20c474ed
   flutter_launcher_icons:
     dependency: "direct dev"
     description:
@@ -432,6 +435,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.3.0"
+<<<<<<< HEAD
   js:
     dependency: transitive
     description:
@@ -440,6 +444,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.7.1"
+=======
+>>>>>>> 78c655e41a363fac3a8a2822f188a32a20c474ed
   json_annotation:
     dependency: transitive
     description:

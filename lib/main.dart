@@ -17,6 +17,7 @@ import 'package:camera/camera.dart';
 
 List<CameraDescription> cameras = [];
 
+<<<<<<< HEAD
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -29,14 +30,28 @@ Future<void> main() async {
   cameras = await availableCameras();
 
   // Set preferred orientations
+=======
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+>>>>>>> 78c655e41a363fac3a8a2822f188a32a20c474ed
   await SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
   ]);
+<<<<<<< HEAD
 
   runApp(MyApp());
 }
 
+=======
+  runApp(MyApp());
+}
+
+
+>>>>>>> 78c655e41a363fac3a8a2822f188a32a20c474ed
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -67,4 +82,8 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 78c655e41a363fac3a8a2822f188a32a20c474ed

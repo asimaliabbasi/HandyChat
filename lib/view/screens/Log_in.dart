@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+<<<<<<< HEAD
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
+=======
+>>>>>>> 78c655e41a363fac3a8a2822f188a32a20c474ed
 import 'package:handychat/view/widgets/size_config.dart';
 import '../widgets/app_style.dart';
 
@@ -20,8 +23,11 @@ class _Log_inPageState extends State<Log_inPage> {
   final _passwordController = TextEditingController();
   final _forgotEmailController = TextEditingController();
   final GoogleSignIn _googleSignIn = GoogleSignIn();
+<<<<<<< HEAD
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FacebookAuth _facebookAuth = FacebookAuth.instance;
+=======
+>>>>>>> 78c655e41a363fac3a8a2822f188a32a20c474ed
 
   bool _isLoading = false;
 
@@ -67,6 +73,7 @@ class _Log_inPageState extends State<Log_inPage> {
         idToken: googleAuth.idToken,
       );
 
+<<<<<<< HEAD
       final UserCredential userCredential =
       await FirebaseAuth.instance.signInWithCredential(credential);
 
@@ -150,6 +157,14 @@ class _Log_inPageState extends State<Log_inPage> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text('Failed to sign in with Facebook: ${e.toString()}'),
+=======
+      await FirebaseAuth.instance.signInWithCredential(credential);
+      Navigator.pushNamed(context, '/home');
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Failed to sign in with Google'),
+>>>>>>> 78c655e41a363fac3a8a2822f188a32a20c474ed
           backgroundColor: Colors.blue,
         ),
       );
@@ -241,7 +256,11 @@ class _Log_inPageState extends State<Log_inPage> {
                       ? null
                       : () async {
                     if (_dialogFormKey.currentState!.validate()) {
+<<<<<<< HEAD
                       setState(() => _isSending = true);
+=======
+                      setState(() => _isLoading = true);
+>>>>>>> 78c655e41a363fac3a8a2822f188a32a20c474ed
                       try {
                         await FirebaseAuth.instance
                             .sendPasswordResetEmail(
@@ -433,12 +452,17 @@ class _Log_inPageState extends State<Log_inPage> {
                         child: Column(
                           children: [
                             SvgPicture.asset(
+<<<<<<< HEAD
                               'assets/SVG/gmail.svg',
+=======
+                              'assets/SVG/gmail.svg', // Make sure you have this asset
+>>>>>>> 78c655e41a363fac3a8a2822f188a32a20c474ed
                               height: 40,
                               width: 40,
                             ),
                             const SizedBox(height: 4),
                             Text(
+<<<<<<< HEAD
                               'Gmail',
                               style: mOswaldBold.copyWith(
                                   fontSize: 16, color: mBlack),
@@ -458,12 +482,32 @@ class _Log_inPageState extends State<Log_inPage> {
                             const SizedBox(height: 4),
                             Text(
                               'Facebook',
+=======
+                              'Google',
+>>>>>>> 78c655e41a363fac3a8a2822f188a32a20c474ed
                               style: mOswaldBold.copyWith(
                                   fontSize: 16, color: mBlack),
                             ),
                           ],
                         ),
                       ),
+<<<<<<< HEAD
+=======
+                      Row(
+                        children: [
+                          SvgPicture.asset(
+                            'assets/SVG/facebook.svg',
+                            height: 38,
+                            width: 38,
+                          ),
+                          Text(
+                            'Facebook',
+                            style: mOswaldBold.copyWith(
+                                fontSize: 16, color: mBlack),
+                          )
+                        ],
+                      )
+>>>>>>> 78c655e41a363fac3a8a2822f188a32a20c474ed
                     ],
                   )
                 ],

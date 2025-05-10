@@ -3,10 +3,13 @@
     <uses-feature android:name="android.hardware.camera"/>
     <uses-feature android:name="android.hardware.camera.autofocus"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.INTERNET" />
     <queries>
         <provider android:authorities="com.facebook.katana.provider.PlatformProvider" />
     </queries>
+=======
+>>>>>>> 78c655e41a363fac3a8a2822f188a32a20c474ed
     <application
         android:label="handychat"
         android:name="${applicationName}"
@@ -38,6 +41,7 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+<<<<<<< HEAD
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -62,6 +66,8 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
+=======
+>>>>>>> 78c655e41a363fac3a8a2822f188a32a20c474ed
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and

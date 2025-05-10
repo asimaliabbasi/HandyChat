@@ -23,7 +23,14 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
+<<<<<<< HEAD
         return ios;
+=======
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for ios - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
+>>>>>>> 78c655e41a363fac3a8a2822f188a32a20c474ed
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -47,6 +54,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
+<<<<<<< HEAD
     apiKey: 'AIzaSyD2z3aL1p9H9djkNkAf_w7g5yIkSvzrFGU',
     appId: '1:979449960272:web:adb386d0bbae7b108dbe55',
     messagingSenderId: '979449960272',
@@ -71,5 +79,22 @@ class DefaultFirebaseOptions {
     projectId: 'handychat-6c954',
     storageBucket: 'handychat-6c954.firebasestorage.app',
     iosBundleId: 'com.example.handychat',
+=======
+    apiKey: 'AIzaSyANfvjX4XYbUWLpcjyv7oAlK7mJIO3Ocl4',
+    appId: '1:724013755773:web:63dc98b63f71e23a77b014',
+    messagingSenderId: '724013755773',
+    projectId: 'handychat-2bdd0',
+    authDomain: 'handychat-2bdd0.firebaseapp.com',
+    storageBucket: 'handychat-2bdd0.firebasestorage.app',
+    measurementId: 'G-5LDBZ9P9C1',
+  );
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyDO66wiTUpllyM-0khv_k-BOrLjsMPD7Xw',
+    appId: '1:724013755773:android:2402cafeddf463ea77b014',
+    messagingSenderId: '724013755773',
+    projectId: 'handychat-2bdd0',
+    storageBucket: 'handychat-2bdd0.firebasestorage.app',
+>>>>>>> 78c655e41a363fac3a8a2822f188a32a20c474ed
   );
 }

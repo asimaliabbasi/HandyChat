@@ -15,7 +15,10 @@ import '../../view_model/flower_item_title.dart';
 import 'ProfileScreen.dart';
 import 'RealTimeDetectionScreen.dart';
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 78c655e41a363fac3a8a2822f188a32a20c474ed
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 

@@ -1,8 +1,15 @@
 package com.example.handychat
 
 import android.graphics.*
+<<<<<<< HEAD
 import android.os.Bundle
 import android.os.SystemClock
+=======
+import android.media.Image
+import android.os.Bundle
+import android.os.SystemClock
+import androidx.camera.core.ImageProxy
+>>>>>>> 78c655e41a363fac3a8a2822f188a32a20c474ed
 import com.google.mediapipe.framework.image.BitmapImageBuilder
 import com.google.mediapipe.framework.image.MPImage
 import com.google.mediapipe.tasks.core.BaseOptions
@@ -13,6 +20,10 @@ import com.google.mediapipe.tasks.vision.handlandmarker.HandLandmarkerResult
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
+<<<<<<< HEAD
+=======
+import kotlin.math.min
+>>>>>>> 78c655e41a363fac3a8a2822f188a32a20c474ed
 import java.io.ByteArrayOutputStream
 
 class MainActivity : FlutterActivity() {
